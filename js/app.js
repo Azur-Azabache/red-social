@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#btn-login').on('click', function() {
-    $(location).attr('href', 'logIn.html');
+    $(location).attr('href', 'login.html');
   });
 
   $('#btn-signup').on('click', function() {
