@@ -68,6 +68,22 @@ font-family: 'Pacifico', cursive;
   background: #A93226;
 }
 
+.bgd-img-index{
+  background-size: cover;
+  background-image: url(../assets/images/principal2.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bgd-img-primary{
+  background-size: cover;
+  background-image: url(../assets/images/fondopuertas.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 nav {
   background: #A93226;
 }
@@ -81,18 +97,19 @@ nav {
 /* FIN CLASES PRIMARY */
 
 /* INICIO CLASES PRIMARY */
-.div-logo h5 {
+.font-logo {
   max-width: 100%;
   font-family: 'Pacifico', cursive;
   margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
 }
-.logo-logo{
+/* .logo-logo{
   max-width: 100%;
   font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-  text-align: center;
-color: white;
-}
+  
+} */
 /* FIN CLASES PRIMARY */
 
 /* INICIO CLASES LOGIN */
@@ -116,5 +133,9 @@ color: white;
 
 
 /* INICIO MEDIA QUERIES */
-
+@media screen and (max-width: 768px){
+  .font-screen {
+    font-size: 1rem;
+  }
+}
 /* FIN MEDIA QUERIES */
