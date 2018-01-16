@@ -51,7 +51,7 @@ $(document).ready(function() {
   });
 
   $txtPassword.on('input', function() {
-    // console.log($(this).val());
+    console.log($(this).val());
     if ($(this).val().length >= 6) {
       validatePassword = true;
       activeButton();
@@ -71,48 +71,56 @@ $(document).ready(function() {
     var $promise = $auth.signInWithEmailAndPassword($email, $pass);
     $promise.catch(event => alert(event.message));
 
-    window.location.href = 'inicio.html';
+
+    // Validamos que no entre si es que no ingresa un usuario valido
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (firebaseUser) {
+        alert('Usted se ha logueado Correctamente');
+        window.location.href = 'start.html';
+      } else {
+        alert('usted no esta registrado');
+      }
+    });
   });
 
   $btnLogGoogle.on('click', function(event) {
     var $provider = new firebase.auth.GoogleAuthProvider();
-    $provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-    firebase.auth().getRedirectResult().then(function(result) {
-      consolelog(result.user);
-      // if (result.credential) {
-      //   // This gives you a Google Access Token. You can use it to access the Google API.
-      //   var token = result.credential.accessToken;
-      //   // ...
-      // }
-      // // The signed-in user info.
-      // var user = result.user;
+    // $provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+    firebase.auth().signInWithPopup($provider).then(function(result) {
+      window.location.href = 'start.html';
+      console.log(result.user);
+      // guardando la imagen y nombre;
+      localStorage.photo = result.user.photoURL;
+      localStorage.name = result.user.displayName;
+      localStorage.id = result.user.uid;
+      guardarFirebase(result.user);
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      var token = result.credential.accessToken;
+      // The signed-in user info.
+      var user = result.user;
+      // ...
+    }).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // The email of the user's account used.
+      var email = error.email;
+      // The firebase.auth.AuthCredential type that was used.
+      var credential = error.credential;
+      // ...
     });
-    // .catch(function(error) {
-    //   // Handle Errors here.
-    //   var errorCode = error.code;
-    //   var errorMessage = error.message;
-    //   // The email of the user's account used.
-    //   var email = error.email;
-    //   // The firebase.auth.AuthCredential type that was used.
-    //   var credential = error.credential;
-    //   // ...
-    // });
-    // $auth.signInWithPopup(provider).then(function(result) {
-    //   console.log(result.user);
-    //   // This gives you a Google Access Token. You can use it to access the Google API.
-    //   var token = result.credential.accessToken;
-    //   // The signed-in user info.
-    //   var user = result.user;
-    //   // ...
-    // }).catch(function(error) {
-    //   // Handle Errors here.
-    //   var errorCode = error.code;
-    //   var errorMessage = error.message;
-    //   // The email of the user's account used.
-    //   var email = error.email;
-    //   // The firebase.auth.AuthCredential type that was used.
-    //   var credential = error.credential;
-    //   // ...
-    // });
+
+    // funcion para guardar en firebase los datos de quien entra
+    function guardarFirebase(user) {
+      var usuario = {
+        uid: user.uid,
+        nombre: user.displayName,
+        foto: user.photoURL,
+        mail: user.email,
+        seguidores: 31,
+      };
+      firebase.database().ref('usuarios/' + user.uid).set(usuario);
+      // window.location.href = '../views/profile.html';
+    }
   });
 });

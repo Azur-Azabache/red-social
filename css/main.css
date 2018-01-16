@@ -5,15 +5,40 @@
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
 }
-
+body{
+  background: #F6F6CE;
+}
+.first-part, .second-part{
+background: #fff;
+border-radius: 10px;
+padding: 0 20px;
+}
+.second-part{
+  padding: 15px;
+}
 .img-post{
   width: 100%;
 }
-
 main{
   margin-top: 20px;
 }
-
+#textarea1{
+max-width: 90%;
+}
+#label{
+  left: 5%;
+}
+#camera{
+  position: relative;
+  bottom: 13px;
+  right: 5px;
+}
+#camera1{
+  line-height: 1.5px;
+}
+#camera2{
+height: 2.5rem;
+}
 /* FÍN CLASES REUTILIZABLES */
 .container-flex-row {
 	display: flex;
@@ -40,11 +65,16 @@ main{
   color: #FFC300;
 }
 
+#font-color-h5{
+  color: #FFC300;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
 .text-color-title, .tabs a{
   color: #FFC300;
 }
 .imageUpload{
-  max-width: 70%;
+  max-width: 100%;
   text-align: center;
 }
 .grad10 {
@@ -59,6 +89,10 @@ font-family: 'Pacifico', cursive;
 
 .logo-general{
   width: 65%;
+}
+
+#tabs-swipe-demo{
+  overflow: hidden;
 }
 
 /* INICIO CLASES INDEX */
@@ -87,8 +121,13 @@ font-family: 'Pacifico', cursive;
 nav {
   background: #A93226;
 }
-/* FIN CLASES INDEX */
-
+.collapsible{
+  border: none;
+ box-shadow: none;
+}
+#btnSend{
+  margin-top: 13px;
+}
 /* INICIO CLASES PRIMARY */
 .btn-primary, .btn, .tabs .indicator, .btn:hover{
   background-color: #FFC300;
@@ -101,14 +140,22 @@ nav {
   max-width: 100%;
   font-family: 'Pacifico', cursive;
   margin: 0;
+<<<<<<< HEAD
   font-size: 1.5rem;
+=======
+  font-size: 3rem;
+>>>>>>> f43a7fba698b12be552fbfff41546175bc79dc94
   text-align: center;
   color: white;
 }
 /* .logo-logo{
   max-width: 100%;
   font-family: 'Pacifico', cursive;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> f43a7fba698b12be552fbfff41546175bc79dc94
 } */
 /* FIN CLASES PRIMARY */
 
@@ -134,8 +181,16 @@ nav {
 
 /* INICIO MEDIA QUERIES */
 @media screen and (max-width: 768px){
+<<<<<<< HEAD
   .font-screen {
     font-size: 1rem;
   }
 }
 /* FIN MEDIA QUERIES */
+=======
+  #font-screen {
+    font-size: 1.3rem;
+  }
+}
+/* FIN MEDIA QUERIES */
+>>>>>>> f43a7fba698b12be552fbfff41546175bc79dc94

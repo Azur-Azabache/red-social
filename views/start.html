@@ -28,37 +28,38 @@
     <nav>
       <div class="nav-wrapper">
         <div class="div-logo">
-          <a href="inicio.html" class="brand-logo font-logo">
+          <a href="start.html" class="brand-logo font-logo" id="font-screen">
             Puertas de Tingo María
           </a>
         </div>
         <a href="#" data-activates="mobile-demo" class="button-collapse">
           <i class="material-icons">menu</i>
         </a>
+
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="inicio.html">
-              <i class="material-icons">event</i>Inicio
+            <a href="start.html">
+              <i class="material-icons">home</i>Inicio
             </a>
           </li>
           <li>
-            <a href="friends.html">
-              <i class="material-icons">supervisor_account</i>Friends
+            <a href="members.html">
+              <i class="material-icons">supervisor_account</i>Miembros
             </a>
           </li>
           <li>
             <a href="notifications.html">
-              <i class="material-icons">notifications</i>Notif.
+              <i class="material-icons">notifications</i>Noticias
             </a>
           </li>
           <li>
             <a href="profile.html">
-              <i class="material-icons">account_circle</i>Profile
+              <i class="material-icons">account_circle</i>Perfil
             </a>
           </li>
           <li>
             <a href="primary.html">
-              <i class="material-icons">close</i>Cerrar
+              <i class="material-icons">close</i>Cerarr
             </a>
           </li>
         </ul>
@@ -69,7 +70,7 @@
                 <img src="../assets/images/portada.jpg">
               </div>
               <a href="#!user">
-                <img class="circle" src="../assets/images/user.jpg">
+                <img class="circle foto-user" src="../assets/images/user.jpg">
               </a>
               <a href="#!name">
                 <span class="white-text name">John Doe</span>
@@ -85,92 +86,103 @@
             </a>
           </li>
           <li>
-            <a href="inicio.html">Inicio</a>
+            <a href="start.html">Inicio</a>
           </li>
           <li>
             <div class="divider"></div>
           </li>
           <li>
-            <a href="friends.html">Friends</a>
+            <a href="members.html">Miembros</a>
           </li>
           <li>
             <div class="divider"></div>
           </li>
           <li>
-            <a href="notifications.html">Notifications</a>
+            <a href="notifications.html">Noticias</a>
           </li>
           <li>
             <div class="divider"></div>
           </li>
           <li>
-            <a href="profile.html">Profile</a>
+            <a href="profile.html">Perfil</a>
           </li>
           <li>
             <div class="divider"></div>
           </li>
           <li>
-            <a href="primary.html">Close</a>
+            <a href="primary.html">Cerrar</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+  <br>
   <main>
-    <div class="container">
+    <div class="container first-part">
       <div class="row">
         <form class="col s12">
-          <div class="col s2">
-            <img src="../assets/images/user.jpg" alt="" class="circle responsive-img">
-            <!-- notice the "circle" class -->
-          </div>
-          <div class="col s10">
-            <!-- Inicio Tabs -->
-            <ul id="tabs-swipe-demo" class="tabs">
-              <li class="tab col s5">
-                <a href="#test-swipe-1">
-                  <i class="material-icons">mode_edit</i>Publicación</a>
-              </li>
-              <li class="tab col s5">
-                <a class="active" href="#test-swipe-2">
-                  <i class="material-icons">insert_photo</i>Foto</a>
-              </li>
-            </ul>
-            <div id="test-swipe-1" class="">
-              <div class="input-field">
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1">¿Algo nuevo que informar?</label>
-                <a class="waves-effect waves-light btn btn-primary" id="btnPost">Publicar</a>
-              </div>
-            </div>
-            <div id="test-swipe-2" class="">
-              <form action="#">
-                <div class="file-field input-field">
-                  <div class="btn" id="">
-                    <i class="material-icons">insert_photo</i>
-                    <input id="file" type="file" multiple>
-                  </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
-                  </div>
-                </div>
-              </form>
-              <a class="waves-effect waves-light btn btn-primary" id="btnImage">Publicar</a>
+          <!-- Inicio Tabs -->
+          <ul id="tabs-swipe-demo" class="tabs">
+            <li class="tab col s12">
+              <a href="#test-swipe-1">
+                <i class="material-icons">mode_edit</i>Publicación</a>
+            </li>
+          </ul>
+          <div id="test-swipe-1" class="">
+            <div class="input-field center">
+              <textarea id="textarea1" class="materialize-textarea center"></textarea>
+              <label id="label" class="center" for="textarea1">¿Algo nuevo que informar?</label>
             </div>
           </div>
         </form>
       </div>
+      <div class="row">
+        <div class="col s5 center">
+          <a class="waves-effect waves-light btn btn-primary disabled" id="btnPost">Publicar</a>
+        </div>
+        <div class="col s7 center" id="camera">
+          <form action="#">
+            <div class="file-field input-field">
+              <div id="camera2" class="btn">
+                <span id="camera1" class="material-icons">camera_alt</span>
+                <input id="file" type="file" multiple="1">
+              </div>
+              <div class="file-path-wrapper">
+                <input id="input2" class="file-path validate" type="text" placeholder="Upload">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+    <br>
+  
     <div class="container">
       <div id="board" class="row">
         <form class="col s12">
-          <div class="row">
+          <div class="row second-part">
             <div class="col s2">
-              <img src="../assets/images/user.jpg" alt="" class="circle responsive-img">
+              <img src="../assets/images/user.jpg" alt="" class="circle responsive-img foto-user">
               <!-- notice the "circle" class -->
             </div>
-            <div class="col s10">
+            <div class="col s10 demo">
               <p>Mi Primer Post</p>
               <img class="img-post" src="../assets/images/portada.jpg" alt="">
+            </div>
+            <div class="col s8">
+              <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div id="commentBox" class="collapsible-header">
+                <i class="material-icons">comment</i>
+                <input id='comment' type='text' placeholder='Comenta aquí...' value=''>
+                </div>
+              <div id="postComment" class="collapsible-body">
+              </div>
+            </li>
+            </ul>
+            </div>
+            <div id="btnSend" class="col s4 center">
+              <a class="waves-effect waves-light btn btn-primary disabled" id="btnComment">Enviar</a>
             </div>
           </div>
         </form>
