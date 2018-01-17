@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Friends</title>
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="">
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="div-logo">
+          <a href="start.html" class="brand-logo font-logo" id="font-screen">
+            Puertas de Tingo María
+          </a>
+        </div>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="start.html">
+              <i class="material-icons">home</i>Inicio
+            </a>
+          </li>
+          <li>
+            <a href="members.html">
+              <i class="material-icons">supervisor_account</i>Miembros
+            </a>
+          </li>
+          <li>
+            <a href="notifications.html">
+              <i class="material-icons">notifications</i>Noticias
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="material-icons">account_circle</i>Perfil
+            </a>
+          </li>
+          <li>
+            <a href="primary.html">
+              <i class="material-icons">close</i>Cerarr
+            </a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="../assets/images/portada.jpg">
+              </div>
+              <a href="#!user">
+                <img class="circle foto-user" src="../assets/images/user.jpg">
+              </a>
+              <a href="#!name">
+                <span class="white-text name">John Doe</span>
+              </a>
+              <a href="#!email">
+                <span class="white-text email">jdandturk@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="material-icons">cloud</i> Mi Drive
+            </a>
+          </li>
+          <li>
+            <a href="start.html">Inicio</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="members.html">Miembros</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="notifications.html">Noticias</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="profile.html">Perfil</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="primary.html">Cerrar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row ">
+        <div class="col s12">
+          <i class="material-icons">supervisor_account</i>
+          <h1 class="center-align"> Add Friends</h1>
+        </div>
+        <div class="col s12">
+          <div class="col s2">
+            <img src="../assets/images/friend.jpg" alt="" class="circle responsive-img">
+            <!-- notice the "circle" class -->
+          </div>
+          <div class="col s10 container-flex-column">
+            <table class="responsive-table centered highlight">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>jdandturk@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col s12  m12 l12 xl12">
+              <a class="btn display-block btn-agregar">Agregar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12">
+          <div class="col s2">
+            <img src="../assets/images/friend.jpg" alt="" class="circle responsive-img">
+            <!-- notice the "circle" class -->
+          </div>
+          <div class="col s10 container-flex-column">
+            <table class="responsive-table centered highlight">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>jdandturk@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col s12  m12 l12 xl12">
+              <a class="btn display-block btn-agregar">Agregar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../vendors/js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="../js/friends.js"></script>
+</body>
+
+</html>

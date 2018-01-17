@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+  <body class="">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="div-logo">
+          <a href="#" class="brand-logo font-logo center" id="font-screen">
+            Puertas de Tingo María
+          </a>
+        </div>
+      </div>
+    </nav>
+    <h5 class="font-logo" id="font-color-h5">Inicia Sesión</h5>
+    <div class="divider line"></div>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 m12 l6 xl6">
+            <i class="material-icons prefix">account_circle</i>
+            <input placeholder="Email" id="email" type="email" class="active validate" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s12 m12 l6 xl 6">
+            <i class="material-icons prefix">vpn_key</i>
+            <input id="password" type="password" placeholder="Password" class="validate" required />
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12  m12 l12 xl12">
+            <a class="btn disabled display-block" id="btn-login">Login</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12  m12 l12 xl12">
+            <p> Ingresar con:</p>
+            <a id="btn-google" class="waves-effect waves-light btn social google display-block btn-primary">
+              <i class="fa fa-google"></i> Sign in with google</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Inicio Enlace BD -->
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <!-- Fin Enlace BD -->
+    </body>
+    <script src="../vendors/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+  </html>

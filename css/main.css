@@ -1,0 +1,180 @@
+/* INICIO CLASES REUTILIZABLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+  background: #F6F6CE;
+}
+.first-part, .second-part{
+background: #fff;
+border-radius: 10px;
+padding: 0 20px;
+}
+.second-part{
+  padding: 15px;
+}
+.img-post{
+  width: 100%;
+}
+main{
+  margin-top: 20px;
+}
+#textarea1{
+max-width: 90%;
+}
+#label{
+  left: 5%;
+}
+#camera{
+  position: relative;
+  bottom: 13px;
+  right: 5px;
+}
+#camera1{
+  line-height: 1.5px;
+}
+#camera2{
+height: 2.5rem;
+}
+/* FÍN CLASES REUTILIZABLES */
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.container-flex-column {
+  display: flex;
+	flex-direction:column;
+  justify-content: center;
+	padding: 2em;
+}
+
+.display-block{
+  display: block;
+}
+
+.vh100 {
+	height: 100vh;
+}
+
+.text-color-white, .tabs .tab a:hover, .tabs .tab a.active, .tabs .tab a{
+  color: #FFC300;
+}
+
+#font-color-h5{
+  color: #FFC300;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+.text-color-title, .tabs a{
+  color: #FFC300;
+}
+.imageUpload{
+  max-width: 100%;
+  text-align: center;
+}
+.grad10 {
+  background: #990000;
+	}
+
+.title-principal{
+font-size: 4rem;
+font-weight: bold;
+font-family: 'Pacifico', cursive;
+}
+
+.logo-general{
+  width: 65%;
+}
+
+#tabs-swipe-demo{
+  overflow: hidden;
+}
+
+/* INICIO CLASES INDEX */
+
+/* GRADIENTE PARA EL INICIO*/
+.grad70 {
+  background: #A93226;
+}
+
+.bgd-img-index{
+  background-size: cover;
+  background-image: url(../assets/images/principal2.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bgd-img-primary{
+  background-size: cover;
+  background-image: url(../assets/images/fondopuertas.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background: #A93226;
+}
+.collapsible{
+  border: none;
+ box-shadow: none;
+}
+#btnSend{
+  margin-top: 13px;
+}
+/* INICIO CLASES PRIMARY */
+.btn-primary, .btn, .tabs .indicator, .btn:hover{
+  background-color: #FFC300;
+}
+
+/* FIN CLASES PRIMARY */
+
+/* INICIO CLASES PRIMARY */
+.font-logo {
+  max-width: 100%;
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+/* .logo-logo{
+  max-width: 100%;
+  font-family: 'Pacifico', cursive;
+
+} */
+/* FIN CLASES PRIMARY */
+
+/* INICIO CLASES LOGIN */
+.line{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.display-block{
+  display: block;
+}
+/* FIN CLASES LOGIN */
+#img-profile{
+  max-width: 30%;
+  margin-left: 33%;
+}
+.date{
+  float: right;
+}
+/* CLASES PROFILE */
+
+
+/* INICIO MEDIA QUERIES */
+@media screen and (max-width: 768px){
+  #font-screen {
+    font-size: 1.3rem;
+  }
+}
+/* FIN MEDIA QUERIES */
